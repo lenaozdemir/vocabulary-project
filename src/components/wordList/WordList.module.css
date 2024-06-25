@@ -1,0 +1,35 @@
+.words{
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wordsTitle{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    margin: 0;
+    color: var(--color-main-blue);
+    text-align: center;
+}
+
+.wordsList{
+    font-family: var(--font-heading);
+    color: var(--color-main-blue);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding: 0 20px;
+}
+
+.wordsItem{
+    border: 1px solid var(--color-main-blue);
+ 
+    height: 20px;
+    border-radius: 7px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    text-align: center;
+    flex-grow: 1;
+}
