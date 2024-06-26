@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Card.module.css';
 
+
 const WordCard = ({ word, definition }) => {
   return (
     <div className={styles.card}>

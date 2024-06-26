@@ -2,34 +2,88 @@
     background-color: var(--color-bg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.wordsTitle{
+.title{
     font-family: var(--font-heading);
     font-size: var(--font-size-large);
     margin: 0;
-    color: var(--color-main-blue);
+    color: var(--color-even-more-light-blue);
     text-align: center;
 }
 
-.wordsList{
-    font-family: var(--font-heading);
-    color: var(--color-main-blue);
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    padding: 0 20px;
-}
-
-.wordsItem{
+.addWordButton{
+    width: 300px;
+    font-size: 1.5em;
     border: 1px solid var(--color-main-blue);
- 
-    height: 20px;
     border-radius: 7px;
-    margin-bottom: 7px;
-    margin-right: 5px;
-    text-align: center;
-    flex-grow: 1;
+    color: var(--color-main-blue);
+    font-family: var(--font-text);
+    background-color: var(--color-bg);
+    box-shadow: 6px 6px 15px 2px var(--color-main-blue);
+    margin-bottom: 5px;
 }
+
+.list{
+    font-family: var(--font-heading);
+    color: var(--color-even-more-light-blue);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    text-transform: uppercase;
+    font-family: var(--font-text);
+}
+
+.wordBox{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    background-color: var(--color-bg-2);
+    border: 1px solid var(--color-main-blue);
+    border-radius: 7px;
+
+}
+
+.word{
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.wordButtonBox{
+    margin: auto 0;
+}
+
+.wordButton{
+    margin-right: 10px;
+    padding: 1px 9px;
+    border: 1px solid var(--color-bg);
+    border-radius: 7px;
+    color: var(--color-even-more-light-blue);
+    background-color: var(--color-bg);
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.wordButton:hover {
+      box-shadow: 1px 1px 8px 2px var(--color-main-blue);
+    }
+
+
+
+    @media(max-width: 400px){
+        .wordsItem{
+            height: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media(max-width: 790px){
+        .wordsList{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
